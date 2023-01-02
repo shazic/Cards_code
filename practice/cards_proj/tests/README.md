@@ -6,5 +6,5 @@ For example:
 - src directory
 
 ```shell
-export PYTHONPATH=/c/Users/schattopadhyaya/Documents/Learning/Python/Pytest/Code/practice/venv/Lib/site-packages/:/c/Users/schattopadhyaya/Documents/Learning/Python/Pytest/Code/practice/cards_proj/src
+export PYTHONPATH=/c/Users/schattopadhyaya/Documents/Learning/Python/Pytest/Code/practice/cards_proj/src:/c/Users/schattopadhyaya/Documents/Learning/Python/Pytest/Code/practice/venv/Lib/site-packages/
 ```
