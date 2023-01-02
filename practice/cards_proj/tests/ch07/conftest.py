@@ -3,13 +3,13 @@ import cards
 from pathlib import Path
 from tempfile import TemporaryDirectory
 
-def pytest_addoption(parser):
-    parser.addoption(
-        '--func-db',
-        action='store_true',
-        default=False,
-        help='new db for each test',
-    )
+# def pytest_addoption(parser):
+#     parser.addoption(
+#         '--func-db',
+#         action='store_true',
+#         default=False,
+#         help='new db for each test',
+#     )
 
 def db_scope(fixture_name, config):
     if config.getoption("--func-db", None):

@@ -1,15 +1,15 @@
 # Testing strategy
 
 ## Commands:
-- add Add a card to db.
-- config List the path to the Cards db.
-- count Return number of cards in db.
-- delete Remove card in db with given id.
-- finish Set a card state to 'done'.
-- list List cards in db.
-- start Set a card state to 'in prog'.
-- update Modify a card in db with given id with new info.
-- version Return version of cards application
+- add: Add a card to db.
+- config: List the path to the Cards db.
+- count: Return number of cards in db.
+- delete: Remove card in db with given id.
+- finish: Set a card state to 'done'.
+- list: List cards in db.
+- start: Set a card state to 'in prog'.
+- update: Modify a card in db with given id with new info.
+- version: Return version of cards application
 
 ### Count the database entries
 For count we’ve got these test cases:
