@@ -1,5 +1,5 @@
 import pytest
-from cards import Card, MissingSummary
+from cards import Card, MissingSummary, InvalidCardId
 
 def test_should_add_a_card_with_summary_to_empty_db(cards_db):
     c = Card(summary='This is a card for the empty db')
@@ -40,6 +40,10 @@ def test_should_add_two_cards_with_identical_summary_and_owners(cards_db):
     assert cards_db.count() == 2
     assert index1 != index2
     assert c1 == c2
+
+def test_should_throw_error_when_retrieving_a_non_existent_card(cards_db):
+    with pytest.raises(InvalidCardId):
+        cards_db.get_card(9999)
 
 
 
